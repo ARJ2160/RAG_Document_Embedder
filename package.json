@@ -1,0 +1,36 @@
+{
+  "name": "rag-backend",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch ./src/index.ts",
+    "start": "bun run index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.39",
+    "@langchain/core": "^0.3.43",
+    "@pinecone-database/pinecone": "^5.1.1",
+    "@types/compression": "^1.7.5",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "helmet": "^8.1.0",
+    "langchain": "^0.3.20",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^5.1.91",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "@types/pdf-parse": "^1.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
