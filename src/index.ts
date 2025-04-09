@@ -33,5 +33,5 @@ app.get("/health", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`✅ Server running at http://localhost:${port}`);
+  console.log(`⚡️[server]: Server running at http://localhost:${port}`);
 });
