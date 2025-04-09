@@ -1,13 +1,9 @@
 import { z } from "zod";
 
+// Note: For file uploads, validation is now handled by multer middleware
+// This schema is kept for reference and potential future use
 export const embedDocumentSchema = z.object({
   body: z.object({
-    filename: z
-      .string()
-      .min(1, "Filename is required")
-      .refine((val) => val.endsWith(".pdf"), {
-        message: "Only PDF files are supported",
-      }),
   }),
 });
 
